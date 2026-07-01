@@ -28,6 +28,16 @@
     <p>PETRA · Tienda de Cueros · @petra_cueros</p>
   </footer>
 
+  <div id="modal" onclick="cerrarModal()">
+    <div id="modal-contenido" onclick="event.stopPropagation()">
+      <button onclick="cerrarModal()">✕</button>
+      <div id="modal-fotos"></div>
+      <h2 id="modal-nombre"></h2>
+      <p id="modal-desc"></p>
+      <p id="modal-precio"></p>
+    </div>
+  </div>
+  
   <script src="script.js"></script>
 </body>
 </html>
