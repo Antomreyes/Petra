@@ -18,6 +18,8 @@ const productos = [
   { id: 17, nombre: 'Agenda Grande', categoria: 'accesorios', precio: '20.000', foto: '' },
   { id: 18, nombre: 'Notebook Case', categoria: 'accesorios', precio: '40.000', foto: '' },
   { id: 19, nombre: 'Guantes Parrilleros', categoria: 'accesorios', precio: '15.000', foto: '' },
+  { id: 20, nombre: 'Babucha Creta', categoria: 'zapatos', precio: '60.000', foto: '' },
+  { id: 21, nombre: 'Botín Estrella', categoria: 'zapatos', precio: '75.000', foto: '' },
 ];
 
 let categoriaActiva = 'todos';
