@@ -57,7 +57,21 @@ function renderProductos() {
 }
 
 function abrirProducto(id) {
-  alert('Aquí abriremos el detalle del producto ' + id);
+  const p = productos.find(x => x.id === id);
+  if (!p) return;
+
+  document.getElementById('modal-nombre').textContent = p.nombre;
+  document.getElementById('modal-precio').textContent = p.precio ? '$ ' + p.precio : 'Consultar precio';
+  document.getElementById('modal-desc').textContent = p.desc || '';
+  document.getElementById('modal-fotos').innerHTML = p.fotos
+    ? p.fotos.map(f => `<img src="${f}" alt="${p.nombre}">`).join('')
+    : `<img src="${p.foto}" alt="${p.nombre}">`;
+
+  document.getElementById('modal').style.display = 'flex';
+}
+
+function cerrarModal() {
+  document.getElementById('modal').style.display = 'none';
 }
 
 renderProductos();
