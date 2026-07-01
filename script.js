@@ -160,7 +160,7 @@ function abrirProducto(id) {
 
   document.getElementById('modal-fotos').innerHTML = fotosHTML;
 
-  const msg = encodeURIComponent('Hola! Me interesa: ' + p.nombre);
+  const msg = encodeURIComponent('Hola Petra! Me interesa comprar el producto: ' + p.nombre);
   document.getElementById('btn-wa').href = 'https://wa.me/' + WHATSAPP + '?text=' + msg;
 
   document.getElementById('modal').style.display = 'flex';
