@@ -4,7 +4,7 @@ const productos = [
     nombre: 'Billetera Burdeo Lisa',
     categoria: 'billeteras',
     precio: '',
-    foto: 'IMG_6118.JPG',
+    foto: './IMG_6118.JPG',
     fotos: [],
     desc: 'Cuero genuino · Color bordo/vino',
   },
