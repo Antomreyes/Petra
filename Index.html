@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petra · Tienda de Cueros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>PETRA</h1>
+    <p>Tienda de Cueros · Accesorios Artesanales</p>
+  </header>
+
+  <nav>
+    <button class="active" onclick="filtrar('todos', this)">Todos</button>
+    <button onclick="filtrar('carteras', this)">Carteras</button>
+    <button onclick="filtrar('billeteras', this)">Billeteras</button>
+    <button onclick="filtrar('zapatos', this)">Zapatos</button>
+    <button onclick="filtrar('neceser', this)">Neceser</button>
+    <button onclick="filtrar('accesorios', this)">Accesorios</button>
+  </nav>
+
+  <main id="grid"></main>
+
+  <footer>
+    <p>PETRA · Tienda de Cueros · @petra_cueros</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
