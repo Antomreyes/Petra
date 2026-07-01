@@ -119,3 +119,63 @@ footer {
   font-size: 3rem;
   background: #E8DDD0;
 }
+
+#modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#modal-contenido {
+  background: #F8F2EA;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 24px;
+  position: relative;
+}
+
+#modal-contenido button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #3B2A1A;
+  color: #F8F2EA;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#modal-fotos img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+#modal-nombre {
+  font-size: 1.5rem;
+  color: #3B2A1A;
+  margin: 12px 0 6px;
+}
+
+#modal-desc {
+  color: #7A5A3A;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+#modal-precio {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #B8893A;
+}
