@@ -109,7 +109,7 @@ const productos = [
   },
 ];
 
-const WHATSAPP = '+56995483941';
+const WHATSAPP = '+56944785614';
 
 let categoriaActiva = 'todos';
 
