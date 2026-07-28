@@ -7,12 +7,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
     <h1>PETRA</h1>
     <p>Tienda de Cueros · Accesorios Artesanales</p>
   </header>
-
+  <section id="hero" style="background-image: url('hero-bg.jpg');">
+    <div id="hero-overlay">
+      <h2>PETRA CUEROS</h2>
+      <p id="hero-slogan">Esencia de Campo</p>
+      <p id="hero-desc">Creemos en el trabajo hecho a mano, en el cuero que envejece con carácter y en piezas que acompañan tu día a día por años. Cada producto es 100% cuero, confeccionado con dedicación artesanal.</p>
+    </div>
+  </section>
   <nav>
     <button class="active" onclick="filtrar('todos', this)">Todos</button>
     <button onclick="filtrar('carteras', this)">Carteras</button>
@@ -21,9 +26,7 @@
     <button onclick="filtrar('neceser', this)">Neceser</button>
     <button onclick="filtrar('accesorios', this)">Accesorios</button>
   </nav>
-
   <main id="grid"></main>
-
   <div id="modal" onclick="cerrarModal()">
     <div id="modal-contenido" onclick="event.stopPropagation()">
       <button id="modal-cerrar" onclick="cerrarModal()">✕</button>
@@ -32,16 +35,17 @@
       <p id="modal-desc"></p>
       <p id="modal-precio"></p>
       <div id="modal-botones">
-        <a id="btn-wa" href="#" target="_blank">💬 WhatsApp</a>
-        <a id="btn-ig" href="https://instagram.com/petra_cueros" target="_blank">📷 Instagram</a>
+        <a id="btn-wa" href="#" target="_blank">Ir a WhatsApp</a>
+        <a id="btn-ig" href="https://instagram.com/petra_cueros" target="_blank">Ir a Instagram</a>
       </div>
     </div>
   </div>
-
   <footer>
     <p>PETRA · Tienda de Cueros · @petra_cueros</p>
   </footer>
-
+  <a id="whatsapp-flotante" href="https://wa.me/56944785614" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="white"><path d="M16.001 3C9.383 3 4 8.383 4 15.001c0 2.334.65 4.55 1.883 6.484L4 29l7.717-1.842A11.94 11.94 0 0 0 16.001 27C22.619 27 28 21.617 28 15.001 28 8.383 22.619 3 16.001 3zm6.717 16.98c-.283.799-1.639 1.524-2.267 1.618-.578.086-1.31.121-2.113-.133-.487-.153-1.113-.36-1.918-.706-3.375-1.457-5.578-4.855-5.747-5.082-.169-.226-1.379-1.834-1.379-3.498 0-1.664.873-2.482 1.183-2.822.31-.34.677-.425.902-.425.226 0 .451.002.648.012.208.01.487-.079.762.582.283.678.96 2.343 1.044 2.512.084.169.141.367.028.593-.113.226-.169.367-.338.564-.169.198-.354.442-.507.594-.169.169-.345.353-.148.692.198.34.879 1.451 1.887 2.35 1.297 1.156 2.391 1.514 2.73 1.684.339.169.537.141.735-.085.198-.226.847-.988 1.073-1.327.226-.339.451-.283.762-.169.31.113 1.973.931 2.311 1.101.339.169.564.253.649.395.084.141.084.816-.199 1.615z"/></svg>
+  </a>
   <script src="script.js"></script>
 </body>
 </html>
